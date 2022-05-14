@@ -2,7 +2,9 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">DevGear</a>
+         <b-navbar-brand href="/aboutview">
+      <img src="../assets/img/logo.png" alt="">
+    </b-navbar-brand>
         <button
           class="navbar-toggler"
           type="button"
