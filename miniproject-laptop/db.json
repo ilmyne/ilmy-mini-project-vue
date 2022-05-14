@@ -1,0 +1,104 @@
+{
+  "Most-Wanted": [
+      {
+          "id": 1,
+          "kode": "Laptop-01",
+          "nama": "Vivobook Flip 14 TP401",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop01.jpg"
+      },
+      {
+          "id": 2,
+          "kode": "Laptop-02",
+          "nama": "Vivobook Flip 14 TP412",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop02.jpg"
+      },
+      {
+          "id": 3,
+          "kode": "Laptop-03",
+          "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+          "harga": 16067000,
+          "is_ready": true,
+          "gambar": "laptop03.jpg"
+      }
+  ],
+  "Products": [
+      {
+          "id": 1,
+          "kode": "Laptop-01",
+          "nama": "Vivobook Flip 14 TP401",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop01.jpg"
+      },
+      {
+          "id": 2,
+          "kode": "Laptop-02",
+          "nama": "Vivobook Flip 14 TP412",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop02.jpg"
+      },
+      {
+          "id": 3,
+          "kode": "Laptop-03",
+          "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+          "harga": 16067000,
+          "is_ready": true,
+          "gambar": "laptop03.jpg"
+      },
+      {
+          "id": 4,
+          "kode": "Laptop-01",
+          "nama": "Vivobook Flip 14 TP401",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop01.jpg"
+      },
+      {
+          "id": 5,
+          "kode": "Laptop-02",
+          "nama": "Vivobook Flip 14 TP412",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop02.jpg"
+      },
+      {
+          "id": 6,
+          "kode": "Laptop-03",
+          "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+          "harga": 16067000,
+          "is_ready": true,
+          "gambar": "laptop03.jpg"
+      },
+      {
+          "id": 7,
+          "kode": "Laptop-01",
+          "nama": "Vivobook Flip 14 TP401",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop01.jpg"
+      },
+      {
+          "id": 8,
+          "kode": "Laptop-02",
+          "nama": "Vivobook Flip 14 TP412",
+          "harga": 15000000,
+          "is_ready": true,
+          "gambar": "laptop02.jpg"
+      },
+      {
+          "id": 9,
+          "kode": "Laptop-03",
+          "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+          "harga": 16067000,
+          "is_ready": true,
+          "gambar": "laptop03.jpg"
+      }
+  ],
+  "Cart": [],
+  "Checkout": []
+}
