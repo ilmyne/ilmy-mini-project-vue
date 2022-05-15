@@ -16,16 +16,20 @@
           </router-link>
         </div>
       </div>
-      
+
       <div class="row mb-3">
-        <div class="col-md-4 mt-4">
-          <h2>Laptop</h2>
+        <div
+          class="col-md-4 mt-4"
+          v-for="product in products"
+          :key="product.id"
+        >
+          <CardProduct :product="product" />
         </div>
       </div>
 
       <div class="footer">
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </div>
   </div>
 </template>
@@ -35,13 +39,32 @@
 import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
 import Footer from "@/components/Footer.vue";
+import CardProduct from "@/components/CardProduct.vue";
+import axios from "axios";
 
 export default {
   name: "HomeView",
   components: {
     Navbar,
     Hero,
-    Footer
-},
+    Footer,
+    CardProduct,
+  },
+  data() {
+    return {
+      products: [],
+    };
+  },
+  methods: {
+    setProduct(data) {
+      this.products = data;
+    },
+  },
+  mounted() {
+    axios
+      .get(" http://localhost:3000/Most-Wanted")
+      .then((response) => this.setProduct(response.data))
+      .catch((error) => console.log(error));
+  },
 };
 </script>

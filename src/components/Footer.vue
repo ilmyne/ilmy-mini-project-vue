@@ -6,9 +6,9 @@
         class="mb-0"
         href="/"
         type="black"
-        style="font-family: 'Lobster', cursive; font-size: xx-large"
-        >Foodin</b-navbar-brand
-      >
+        style="font-family: 'Montserrat', sans-serif; font-size: xx-large"
+        ><img src="../assets/img/logo.png" alt=""
+      /></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse " variant="black"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -27,15 +27,14 @@
       </b-collapse>
     </b-navbar>
     <b-row style="margin-left: 0.3%; font-weight: 400"
-      ><b-col>Lorem ipsum dolor sit amet, consectetuipisicing elit, </b-col>
+      ><b-col href="aboutview">About Us</b-col>
     </b-row>
     <b-row align-h="end" style="padding: 4% 0">
       <b-col cols="6">
         &copy;2020 Flowbase. Powered by
         <a href="https://webflow.com/">Webflow</a></b-col
       >
-      <b-col cols="2" align-self="start"
-        >
+      <b-col cols="2" align-self="start">
         <!-- <a href=""
           ><img
             src="~/assets/img/instagram.png"

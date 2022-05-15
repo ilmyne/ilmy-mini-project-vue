@@ -10,7 +10,6 @@
                 <strong>Welcome</strong><br />Place for your daily drive with
                 best deal
               </h2>
-              <!-- <button class="btn btn-lg btn-success">Buy Now</button> -->
               <div>
                 <router-link to="/product">
                   <b-button variant="primary" size="lg">Buy Now</b-button>

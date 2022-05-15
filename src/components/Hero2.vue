@@ -2,7 +2,7 @@
 <template>
   <div class="row">
     <div class="col">
-      <h2><strong>DevGear Product</strong></h2>
+      <h2><strong>Laptop</strong></h2>
 
       <b-dropdown
           text="Choose your preference"
