@@ -2,9 +2,10 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <div class="container-fluid">
-         <b-navbar-brand href="/aboutview">
-      <img src="../assets/img/logo.png" alt="">
-    </b-navbar-brand>
+        <b-navbar class="header" type="light" variant="light" fixed="top">
+          <b-navbar-brand href="/aboutview">
+            <img src="../assets/img/logo.png" alt="" />
+          </b-navbar-brand>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,16 +32,18 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <router-link class="nav-link" to="/cart">Cart
+              <router-link class="nav-link" to="/cart"
+                >Cart
                 <b-icon-cart></b-icon-cart>
                 <span class="badge badge-success ml-2">0</span>
               </router-link>
             </li>
-
           </ul>
         </div>
+        </b-navbar>
       </div>
     </div>
+    <hr />
   </nav>
 </template>
 

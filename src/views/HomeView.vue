@@ -1,9 +1,8 @@
 <template>
   <div class="home">
-    <Navbar />
     <div class="container">
+      <Navbar />
       <Hero />
-
       <div class="row mt-4">
         <div class="col">
           <h2>Most Wanted</h2>
@@ -17,7 +16,7 @@
         </div>
       </div>
 
-      <div class="row mb-3">
+      <div class="row mb-4">
         <div
           class="col-md-4 mt-4"
           v-for="product in products"
@@ -26,30 +25,24 @@
           <CardProduct :product="product" />
         </div>
       </div>
-
-      <div class="footer">
-        <Footer />
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
-import Footer from "@/components/Footer.vue";
 import CardProduct from "@/components/CardProduct.vue";
 import axios from "axios";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: "HomeView",
   components: {
-    Navbar,
     Hero,
-    Footer,
     CardProduct,
-  },
+    Navbar
+},
   data() {
     return {
       products: [],

@@ -11,7 +11,7 @@
         {
             "id": 2,
             "kode": "Laptop-02",
-            "nama": "Vivobook Flip 14 TP412",
+            "nama": "Lenovo Flip 14 TP412",
             "harga": 15000000,
             "is_ready": true,
             "gambar": "laptop-dua.jpg"
@@ -19,7 +19,7 @@
         {
             "id": 3,
             "kode": "Laptop-03",
-            "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+            "nama": "Samsung Pro 14X OLED",
             "harga": 16067000,
             "is_ready": true,
             "gambar": "laptop-tiga.jpg"
@@ -37,7 +37,7 @@
         {
             "id": 2,
             "kode": "Laptop-02",
-            "nama": "Vivobook Flip 14 TP412",
+            "nama": "Lenovo Flip 14 TP412",
             "harga": 15000000,
             "is_ready": true,
             "gambar": "laptop-lenovo.jpg"
@@ -45,7 +45,7 @@
         {
             "id": 3,
             "kode": "Laptop-03",
-            "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+            "nama": "Samsung Pro 14X OLED",
             "harga": 16067000,
             "is_ready": true,
             "gambar": "laptop-samsung.jpg"
@@ -61,7 +61,7 @@
         {
             "id": 5,
             "kode": "Laptop-05",
-            "nama": "Vivobook Flip 14 TP412",
+            "nama": "Lenovo Flip 14 TP412",
             "harga": 15000000,
             "is_ready": true,
             "gambar": "laptop-dua.jpg"
@@ -69,7 +69,7 @@
         {
             "id": 6,
             "kode": "Laptop-06",
-            "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+            "nama": "Samsung Pro 14X OLED",
             "harga": 16067000,
             "is_ready": true,
             "gambar": "laptop-tiga.jpg"
@@ -85,7 +85,7 @@
         {
             "id": 8,
             "kode": "Laptop-08",
-            "nama": "Vivobook Flip 14 TP412",
+            "nama": "Lenovo Flip 14 TP412",
             "harga": 15000000,
             "is_ready": true,
             "gambar": "laptop-lenovo.jpg"
@@ -93,7 +93,7 @@
         {
             "id": 9,
             "kode": "Laptop-09",
-            "nama": "Vivobook Pro 14X OLED (N7400, 11th Gen Intel",
+            "nama": "Samsung Pro 14X OLED",
             "harga": 16067000,
             "is_ready": true,
             "gambar": "laptop-samsung.jpg"

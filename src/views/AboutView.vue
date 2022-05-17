@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <Navbar />
     <div class="container">
+      <Navbar />
     <Hero3 />
 
     </div>
@@ -10,14 +10,14 @@
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
 import Hero3 from '@/components/Hero3.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'AboutView',
   components: {
-    Navbar,
-    Hero3
+    Hero3,
+    Navbar
 }
 }
 </script>

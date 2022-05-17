@@ -1,60 +1,32 @@
 <template>
-  <div style="margin-top: 12%; margin-left: 3%; margin-right: 3%">
-    <b-navbar toggleable="lg" type="white" variant="white" fixed>
+  <div style="margin-top: 12%; margin-left: 3%; margin-right: 3%" class="footer">
       <b-navbar-brand
         tag="h1"
         class="mb-0"
         href="/"
         type="black"
         style="font-family: 'Montserrat', sans-serif; font-size: xx-large"
-        ><img src="../assets/img/logo.png" alt=""
+        ><img src="../assets/img/logo2.png" alt=""
       /></b-navbar-brand>
+    <div class="footer">
+      <b-nav vertical class="w-25">
+        <b-nav-item type="black" href="/">Home</b-nav-item>
+        <b-nav-item type="black" href="product">Product</b-nav-item>
+        <b-nav-item type="black" href="aboutview">About Us</b-nav-item>
+      </b-nav>
+    </div>
 
-      <b-navbar-toggle target="nav-collapse " variant="black"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto" end>
-          <b-nav-item as="NUXTLINK" type="black" href="/">Home</b-nav-item>
-          <b-nav-item as="NUXTLINK" type="black" href="recipes"
-            >Recipes</b-nav-item
-          >
-          <b-nav-item as="NUXTLINK" type="black" href="contact"
-            >Contact Us</b-nav-item
-          >
-          <b-nav-item as="NUXTLINK" type="black" href="about"
-            >About us</b-nav-item
-          >
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-    <b-row style="margin-left: 0.3%; font-weight: 400"
-      ><b-col href="aboutview">About Us</b-col>
-    </b-row>
-    <b-row align-h="end" style="padding: 4% 0">
-      <b-col cols="6">
-        &copy;2020 Flowbase. Powered by
-        <a href="https://webflow.com/">Webflow</a></b-col
-      >
-      <b-col cols="2" align-self="start">
-        <!-- <a href=""
-          ><img
-            src="~/assets/img/instagram.png"
-            tag="NajmunNahar"
-            class="icon-size link-margin"
-          /> </a
-        ><a href=""
-          ><img
-            src="~/assets/img/twitter.png"
-            tag="NajmunNahar"
-            class="icon-size link-margin"
-          /> </a
-        ><a href=""
-          ><img
-            src="~/assets/img/facebook.png"
-            tag="NajmunNahar"
-            class="icon-size link-margin"
-          /></a> -->
-      </b-col>
-    </b-row>
+    <div class="footer">
+
+      <b-row align-h="end" style="padding: 4% 0">
+        <b-col cols="6">
+          &copy;2022      <a href="/"><img src="../assets/img/logo2.png" alt="" /></a>Copyright
+        </b-col>
+        <b-col cols="2" align-self="start">
+        </b-col>
+      </b-row>
+    </div>
+    
   </div>
 </template>
 
@@ -69,3 +41,4 @@ export default {
   margin: 0 3%;
 }
 </style>
+
