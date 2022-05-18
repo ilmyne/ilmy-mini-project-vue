@@ -44,7 +44,7 @@
                     <strong>{{ cart.products.nama }}</strong>
                     <br />
                     <img
-                      src="'../assets/img/' + cart.products.gambar"
+                      :src="'../assets/img/' + cart.products.gambar"
                       class="img-fluid shadow"
                       width="250"
                     />
