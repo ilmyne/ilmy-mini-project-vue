@@ -1,8 +1,9 @@
 <template>
   <div class="cart">
+    <Navbar :updateCart="carts"/>
     <div class="container">
-      <Navbar />
-      <div class="row mt-5">
+      <!-- bikin kotakan abu di atas yg ada tulisannya home > product > cart -->
+      <div class="row mt-4">
         <div class="col">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -36,13 +37,14 @@
                 </tr>
               </thead>
               <tbody>
+                <!-- product detailnya -->
                 <tr v-for="(cart, index) in carts" :key="cart.id">
                   <th>{{ index + 1 }}</th>
                   <td>
                     <strong>{{ cart.products.nama }}</strong>
                     <br />
                     <img
-                      :src="'assets/img/' + cart.products.gambar"
+                      :src="'../assets/img/' + cart.products.gambar"
                       class="img-fluid shadow"
                       width="250"
                     />
@@ -64,7 +66,17 @@
                     </button>
                   </td>
                 </tr>
-                
+
+                <!-- totalan -->
+                <tr>
+                  <td colspan="5" align="right">
+                    <strong>Price Total: </strong>
+                  </td>
+                  <td>
+                    <strong>Rp. {{ priceTotal }} </strong>
+                  </td>
+                  <td></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -78,7 +90,7 @@
 import Navbar from "@/components/Navbar.vue";
 import axios from "axios";
 export default {
-  name: "Cart",
+  name: "1",
   components: {
     Navbar,
   },
@@ -91,12 +103,35 @@ export default {
     setCarts(data) {
       this.carts = data;
     },
-
-    mounted() {
+    deleteItem(id) {
       axios
-        .get(" http://localhost:3000/Cart")
-        .then((response) => this.setCarts(response.data))
-        .catch((error) => console.log(error));
+      .delete("http://localhost:3000/Cart/" + id)
+      .then(() => {
+        this.$toast.error("Item deleted", {
+          type: "error",
+          position: "top-right",
+          duration: 500,
+          dismissible: true,
+        });
+        // mengupdate halaman setelah dihapus dengan memanggil API Cart
+        axios
+    .get("http://localhost:3000/Cart")
+    .then((response) => this.setCarts(response.data))
+    .catch((error) => console.log(error));
+      });
+    },
+  },
+  mounted() {
+    axios
+      .get("http://localhost:3000/Cart")
+      .then((response) => this.setCarts(response.data))
+      .catch((error) => console.log(error));
+  },
+  computed: {
+    priceTotal() {
+      return this.carts.reduce(function (items, data) {
+        return items + data.products.harga * data.quantity;
+      }, 0);
     },
   },
 };

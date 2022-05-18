@@ -1,5 +1,47 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light">
+<div>
+  <b-navbar toggleable="lg" class="header" type="light" variant="light" fixed="top">
+<div class="container">
+    <b-navbar-brand href="/aboutview">
+            <img src="../assets/img/logo.png" alt="" />
+          </b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <li class="nav-item">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/product">Product</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/aboutview">About</router-link>
+            </li>
+      </b-navbar-nav>
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+
+            <li class="nav-item">
+              <router-link class="nav-link" to="/cart"
+                >Cart
+                <b-icon-cart></b-icon-cart>
+                <span class="badge badge-success ml-2">{{ updateCart ? updateCart.length : quantity.length }}</span>
+              </router-link>
+            </li>
+          
+      </b-navbar-nav>
+    </b-collapse>
+</div>
+  </b-navbar>
+<hr />
+<hr />
+<hr />
+</div>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <div class="container-fluid">
         <b-navbar class="header" type="light" variant="light" fixed="top">
@@ -35,7 +77,7 @@
               <router-link class="nav-link" to="/cart"
                 >Cart
                 <b-icon-cart></b-icon-cart>
-                <span class="badge badge-success ml-2">{{ quantity.length }}</span>
+                <span class="badge badge-success ml-2">{{ updateCart ? updateCart.length : quantity.length }}</span>
               </router-link>
             </li>
           </ul>
@@ -44,7 +86,7 @@
       </div>
     </div>
     <hr />
-  </nav>
+  </nav> -->
 </template>
 
 <script>
@@ -58,6 +100,7 @@ export default {
       quantity: []
     }
   },
+  props: ['updateCart'],
   
   methods: {
     setTotal(data) {
