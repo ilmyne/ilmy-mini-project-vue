@@ -28,7 +28,7 @@
       <div class="row">
         <div class="col-md-6">
           <img
-            :src="'../assets/img/' + product.gambar"
+            src="'../assets/img/' + product.gambar"
             class="img-fluid shadow"
           />
         </div>
