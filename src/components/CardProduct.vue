@@ -6,7 +6,7 @@
       <p class="card-text">Harga : Rp. {{ product.harga }}</p>
       <router-link :to="'/product/'+product.id">
         <b-button variant="primary" size="lg" class="buy"
-          ><b-icon-cart></b-icon-cart>Add to Cart</b-button
+          >See Specification</b-button
         >
       </router-link>
     </div>

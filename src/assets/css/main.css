@@ -26,3 +26,11 @@
 .w-25 {
     color: white;
 }
+
+.breadcrumb-item.active{
+    font-weight: bold;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}

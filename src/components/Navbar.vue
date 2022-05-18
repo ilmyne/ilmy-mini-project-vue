@@ -35,7 +35,7 @@
               <router-link class="nav-link" to="/cart"
                 >Cart
                 <b-icon-cart></b-icon-cart>
-                <span class="badge badge-success ml-2">0</span>
+                <span class="badge badge-success ml-2">{{ quantity.length }}</span>
               </router-link>
             </li>
           </ul>
@@ -48,8 +48,29 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "Navbar",
+
+  data() {
+    return {
+      quantity: []
+    }
+  },
+  
+  methods: {
+    setTotal(data) {
+      this.quantity = data
+    }
+  },
+
+  mounted() {
+    axios
+      .get(" http://localhost:3000/Cart")
+      .then((response) => this.setTotal(response.data))
+      .catch((error) => console.log(error));
+  },
 };
 </script>
 
