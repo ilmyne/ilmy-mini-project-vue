@@ -123,6 +123,22 @@
       "for": "kerja/work"
     }
   ],
-  "Cart": [],
+  "Cart": [
+    {
+      "quantity": "2",
+      "note": "Amelia & Bogor",
+      "products": {
+        "id": 1,
+        "kode": "Laptop-01",
+        "nama": "Vivobook Flip 14 TP401",
+        "harga": 15000000,
+        "is_ready": true,
+        "gambar": "laptop-asus.jpg",
+        "specification": "Windows 10 Home - ASUS recommends Windows 10 Pro for business Windows 11 Home - ASUS recommends Windows 11 Pro for business, Free Upgrade to Windows 11",
+        "for": "drakor/design"
+      },
+      "id": 1
+    }
+  ],
   "Checkout": []
 }
